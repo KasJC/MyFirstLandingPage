@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball🏀</title>
+    <style>
+        body {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfjzhmI805ML0AE3FZ2kO9KGVgyvRACHjM2Q&s);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: orangered;
+            font-size: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            color: orange;
+            font-style: italic;
+            font-size: 40px;
+
+        }
+
+        p {
+            font-size: 20px;
+            color: black;
+        }
+
+        a {
+            color: chartreuse;
+            font-size: large;
+        }
+
+        .container {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid;
+            padding: 15px 10px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .dark {
+            background: linear-gradient(109.6deg,
+                    rgb(36, 45, 57) 11.2%,
+                    rgb(16, 37, 60) 51.2%,
+                    rgb(0, 0, 0) 98.6%);
+            color: white;
+        }
+
+        .dark a {
+            color: chartreuse;
+        }
+
+        .dark .kas-main {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .grid {
+            display: grid;
+            margin: 15px 0;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 9px;
+            grid-gap: 8px;
+            object-fit: contain;
+        }
+
+
+
+        footer {
+            text-align: center;
+            margin: 10px 0;
+            color: goldenrod;
+        }
+
+        .theme-button {
+            display: block;
+            font-size: 12px;
+            background: black;
+            color: red;
+            padding: 10px 12px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .theme-button:hover {
+            background: white;
+            color: black;
+        }
+
+        .learn-more-button {
+            display: block;
+            margin: 30px auto;
+            background: white;
+            border: none;
+            font-size: 22px;
+            border-radius: 50px;
+            padding: 10px 15px;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+
+        .learn-more-button:hover {
+            background: goldenrod;
+        }
+
+        img {
+            max-width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            align-content: center;
+        }
+
+        .basketball-intro-pic {
+            border-radius: 10px;
+            align-content: center;
+            transition: transform 150ms ease-in-out, filter 1000ms ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Kas-Main">
+        <div class="Header"><button class="theme-button">Change Theme</button></div>
+        <div class="container">
+            <u>
+                <h1><strong>⛹🏾‍♂️ Basketball🏀</strong></h1>
+            </u>
+            <u>
+                <h2>My Favourite Sport</h2>
+            </u>
+            <img src="https://img.freepik.com/free-photo/basketball-game-concept_23-2150910692.jpg"
+                alt="basketball court" width="100%" class="basketball-intro-pic" />
+
+            <div class="grid">
+                <img src="https://cdn.pixabay.com/photo/2021/11/02/19/32/basketball-6763978_640.jpg" /></a>
+                <img src="https://cdn.pixabay.com/photo/2017/06/03/07/54/basketball-2368164_640.jpg" />
+                <img src="https://cdn.pixabay.com/photo/2021/11/02/19/32/basketball-6763978_640.jpg" />
+            </div>
+            <p>
+                <u><strong>Basketball</strong></u><strong> is a team sport
+                    in which two teams, most commonly of five players each, opposing one another on a
+                    rectangular
+                    court, compete with the primary objective of shooting a basketball through the defender's hoop,
+                    while
+                    preventing
+                    the
+                    opposing team from shooting through their own hoop.</strong>
+            </p>
+            <br>
+
+            <button class="learn-more-button">Learn More</button>
+            <u><strong>Read more on <a href="https://en.wikipedia.org/wiki/Basketball" target="_blank">
+                        Wikipedia📚</strong></a></u><br><br>
+            <footer><u><Strong>For more info on basketball games, visit <a href="https://www.nba.com/games"
+                            target="_blank">www.nba.com</a></Strong></u></footer>
+            <footer><u>Coded by Kasuba Chitimbe</a></u></footer>
+        </div>
+    </div>
+    <script>
+        function learnmore()
+        {
+            let name = prompt("What is your name?");
+            let email = prompt("Please enter your email address!");
+            let experience = prompt("Have you played basketball before? yes/no");
+
+
+            alert("Thank you for your interest, Get ready to explore more basketball, KJC will be intouch with more details💖");
+        }
+        function changeTheme()
+        {
+            let body = document.querySelector("body");
+            body.classList.toggle("dark");
+        }
+
+        let learnMoreButton = document.querySelector(".learn-more-button");
+        learnMoreButton.addEventListener("click", learnmore);
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
+</body>
+
+</html>
